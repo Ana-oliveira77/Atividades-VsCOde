@@ -1,0 +1,31 @@
+/* Estilização dos links */
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccff00; /* Cor próxima do limão */
+}
+
+/* Customização dos parágrafos */
+p {
+    font-family: Arial, sans-serif;
+}
+
+h1 + p {
+    font-weight: bold;
+}
+
+/* Estilização da classe .destaque */
+.destaque {
+    font-family: Arial, sans-serif;
+}
+
+.destaque p {
+    font-weight: bold;
+}
+
+.destaque strong {
+    color: red;
+}

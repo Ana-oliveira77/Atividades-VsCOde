@@ -1,0 +1,141 @@
+/* Paleta de cores azul */
+:root {
+    --background-color: #e3f2fd;
+    --text-color: #0d47a1;
+    --highlight-color: #42a5f5;
+    --link-color: #1976d2;
+    --link-hover-color: #0d47a1;
+    --dark-background: #0d47a1;
+    --light-text: #ffffff;
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    --border-radius: 10px;
+}
+
+/* Aspectos gerais */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+p {
+    text-indent: 1em;
+}
+
+/* Introdução */
+.intro {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, var(--highlight-color), var(--link-hover-color));
+    color: var(--light-text);
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+/* Remover container #design-archives */
+#design-archives {
+    display: none;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+h1 {
+    font-size: 1.8rem;
+    padding-left: 1em;
+}
+
+h2 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Seções de resumo e principal */
+.summary {
+    text-align: center;
+    padding: 20px;
+}
+
+.main p {
+    line-height: 1.5;
+    padding: 10px 20px;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* Abreviaturas */
+abbr {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Menus */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 1em;
+    text-align: center;
+    padding: 10px;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+.sidebar ul li:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    margin: 4% auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+footer a {
+    display: inline-block;
+    border: 2px solid var(--light-text);
+    padding: 0.5em;
+    color: var(--light-text);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    background: var(--highlight-color);
+    transform: scale(1.1);
+}

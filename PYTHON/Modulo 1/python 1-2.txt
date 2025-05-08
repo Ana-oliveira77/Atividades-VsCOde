@@ -1,0 +1,21 @@
+Pseudocódigo:
+
+Início;
+leia n;
+d1 = n - 1
+d2 = 10 - n 
+r = (d1 * 10) + d2
+imprima r
+Fim;
+
+Solução dissertativa:
+
+01-Leia e armazene o número n que se deseja multiplicar por 9 #Entrada
+
+02-Subtrair n - 1 e armazenar como o primeiro dígito n1 #Processamento
+
+03-Subtrair 10 - n e armazenar como o segundo dígito n2 #Processamento
+
+04-Realize a expressão (n1 x 10) + n1
+
+05-Apresente n1 e n2 e encerre o programa #Saída

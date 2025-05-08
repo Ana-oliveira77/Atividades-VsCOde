@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação</title>
+    <style>
+        html { font-size: 20px; }
+        html h1 { font-size: 2rem; }
+        h1 > .principal { font-size: 1.4em; }
+        html .secundario { font-size: 1.4rem; }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff0f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(219, 78, 68);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        form {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(252, 228, 236);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: rgb(219, 78, 68);
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid rgb(219, 78, 68);
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: rgb(219, 78, 68);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: rgb(186, 66, 58);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgb(186, 66, 58);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pesquisa de Satisfação</h1>
+</header>
+
+<form action="POST" method="POST">
+    <h2>Parte 1: Dados Pessoais</h2>
+    
+    <label for="name">Nome Completo:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Telefone para Contato:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <h2>Parte 2: Pesquisa</h2>
+
+    <div class="question-group">
+        <label>Você está satisfeito com o nosso serviço?</label>
+        <input type="radio" id="satisfeito-sim" name="satisfeito" value="Sim" required>
+        <label for="satisfeito-sim">Sim</label>
+        <input type="radio" id="satisfeito-nao" name="satisfeito" value="Não">
+        <label for="satisfeito-nao">Não</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
+
+<footer>
+    <p>Formulário criado com muito amor e carinho! 💖</p>
+</footer>
+
+</body>
+</html>

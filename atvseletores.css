@@ -1,0 +1,32 @@
+body{
+  font-family: Arial;
+  padding: 20px;
+}
+
+h1{
+  color: #333;
+}
+
+#nova-tarefa{
+  padding: 10px;
+  width: 250px;
+}
+
+button{
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tarefa{
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.concluida{
+  text-decoration: line-through;
+  color: green;
+}
+
+.nao-concluida{
+  color: red;
+}

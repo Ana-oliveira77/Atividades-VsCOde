@@ -1,0 +1,96 @@
+body{
+  margin: 0;
+  font-family: Arial;
+  background-color: #e8f5e9;
+}
+
+/* topo fixo */
+.topo{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #2e7d32;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.topo h1{
+  color: white;
+}
+
+textarea{
+  width: 90%;
+  height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  border: 2px solid #66bb6a;
+  border-radius: 8px;
+  outline: none;
+}
+
+textarea:focus{
+  border-color: #1b5e20;
+}
+
+button{
+  margin-top: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #43a047;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover{
+  background-color: #1b5e20;
+}
+
+/* feed */
+#feed{
+  margin-top: 220px;
+  padding: 20px;
+}
+
+/* post */
+.post{
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border-left: 8px solid #43a047;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.usuario{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.usuario h3{
+  color: #1b5e20;
+}
+
+.avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #66bb6a;
+}
+
+.gato{
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.likes{
+  margin-top: 10px;
+  color: #2e7d32;
+  font-weight: bold;
+}
